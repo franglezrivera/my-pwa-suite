@@ -19,7 +19,10 @@
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
     "@angular/service-worker": "^19.1.0",
+    "@types/web-bluetooth": "^0.0.20",
     "rxjs": "~7.8.0",
+    "scandit-web-datacapture-barcode": "^6.28.4",
+    "scandit-web-datacapture-core": "^6.28.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },

@@ -1,0 +1,27 @@
+<button (click)="scanForDevices()" [disabled]="isScanning">
+  {{ isScanning ? "Scanning..." : "Scan for Devices" }}
+</button>
+
+<ul *ngIf="devices.length > 0">
+  <li *ngFor="let device of devices">
+    {{ device.name || "Unknown Device" }} <br />
+    {{ device.id }}
+    <button
+      (click)="connect(device)"
+      *ngIf="!connectedDevice || connectedDevice.id !== device.id"
+    >
+      Connect
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="connectedDevice">
+  <h3>Connected Device</h3>
+  <p>{{ connectedDevice.name || "Unknown Device" }}</p>
+  <p>{{ connectedDevice.id }}</p>
+
+  <p *ngIf="characteristic">Characteristic Value: {{ value }}</p>
+  <button (click)="disconnect()">Disconnect</button>
+</div>
+
+<p *ngIf="devices.length === 0 && !isScanning">No devices found.</p>

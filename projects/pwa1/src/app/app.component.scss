@@ -1,0 +1,41 @@
+// Default styles
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  text-align: center;
+}
+
+// Mobile styles
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
