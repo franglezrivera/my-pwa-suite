@@ -5,6 +5,7 @@ import { SharedDataService } from 'shared-lib'; // Import the service
 @Component({
   selector: 'app-root',
   template: `
+    <h2>PWA 1 App</h2>
     <shared-button label="My PWA Button"></shared-button>
     <ul>
       <li *ngFor="let item of data">{{ item }}</li>

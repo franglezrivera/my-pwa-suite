@@ -5,6 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class SharedDataService {
   getData() {
-    return ['lorem', 'lorem', 'lorem', 'lorem']; // Example data
+    return ['lorem', 'lorem', 'lorem', 'lorem', 'ipsum']; // Example data
   }
 }
